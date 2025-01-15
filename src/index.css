@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 225 24% 14%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 24% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 24% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 255 80% 75%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 150 47% 79%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 150 47% 79%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-pixel-navy text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.pixel-border {
+  @apply border-4 border-pixel-purple shadow-[4px_4px_0px_0px_rgba(155,135,245,0.5)];
+}
+
+.pixel-card {
+  @apply bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60;
+  @apply pixel-border rounded-lg p-4;
+}
+
+.pixel-button {
+  @apply bg-pixel-purple hover:bg-pixel-purple/90 text-white font-pixel;
+  @apply px-6 py-3 rounded-lg transition-all duration-200;
+  @apply shadow-[4px_4px_0px_0px_rgba(155,135,245,0.5)];
+  @apply hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(155,135,245,0.5)];
+}
