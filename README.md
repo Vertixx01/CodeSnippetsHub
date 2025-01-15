@@ -50,6 +50,15 @@ bun dev
 
 ![DB Table Structure](./public/db-table.png)
 
+## Video Demo
+
+Watch the video preview for Code Snippets Hub:
+
+[![Watch the Video](./public/preview.png)](https://streamable.com/e5p7gs)
+
+or watch the preview from the [Public Folder](https://github.com/Vertixx01/CodeSnippetsHub/tree/main/public).
+
+
 Access the application at `http://localhost:5565`.
 
 ## Contributing
