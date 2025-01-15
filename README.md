@@ -48,6 +48,8 @@ bun dev
 - **Backend**: Supabase
 - **Styling**: Tailwind CSS
 
+![DB Table Structure](./public/db-table.png)
+
 Access the application at `http://localhost:5565`.
 
 ## Contributing
